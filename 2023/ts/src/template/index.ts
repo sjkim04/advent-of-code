@@ -13,7 +13,7 @@ const part1 = (rawInput: string) => {
 const part2 = (rawInput: string) => {
   const input = parseInput2(rawInput);
 
-  return;
+  return input;
 };
 
 run({
