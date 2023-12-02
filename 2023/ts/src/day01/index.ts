@@ -1,14 +1,14 @@
-import run from "aocrunner";
+import run from 'aocrunner';
 
 const parseInput1 = (rawInput: string) => {
   const inputs = rawInput.split('\n');
   let ans = 0;
   for (let input of inputs) {
     const matches = input.match(/[1-9]/g);
-    ans += +(matches[0]+matches[matches.length-1]+'\n')
-  } 
+    ans += +(matches[0] + matches[matches.length - 1] + '\n');
+  }
   return ans;
-}
+};
 const parseInput2 = (rawInput: string) => {
   const checkStr = (input: string, target: string) => input.includes(target);
 
@@ -18,7 +18,7 @@ const parseInput2 = (rawInput: string) => {
     let numStr = '';
     for (let i = 0; i < input.length; i++) {
       let isFound = false;
-      const sliced = input.substring(0,i);
+      const sliced = input.substring(0, i);
       if (sliced.match(/[1-9]/g)) {
         numStr += sliced.match(/[1-9]/g)[0];
         break;
@@ -66,7 +66,7 @@ const parseInput2 = (rawInput: string) => {
 
     for (let i = 0; i < input.length; i++) {
       let isFound = false;
-      const sliced = input.substring(input.length-1-i);
+      const sliced = input.substring(input.length - 1 - i);
       if (sliced.match(/[1-9]/g)) {
         numStr += sliced.match(/[1-9]/g)[0];
         break;
@@ -112,16 +112,15 @@ const parseInput2 = (rawInput: string) => {
       if (isFound) break;
     }
 
-
     if (numStr.length === 1) {
       const matches = input.match(/[1-9]/g);
-      numStr += matches[matches.length-1];
+      numStr += matches[matches.length - 1];
     } else if (numStr.length === 0) {
       const matches = input.match(/[1-9]/g);
-      numStr += matches[0] + matches[matches.length-1];
+      numStr += matches[0] + matches[matches.length - 1];
     }
 
-    ans += +numStr
+    ans += +numStr;
   }
   return ans;
 };
@@ -150,14 +149,14 @@ run({
   },
   part2: {
     tests: [
-    //  {
-    //    input: `sadfklj;2jklsajfk;saj4`,
-    //    expected: 24,
-    //  },
-    //  {
-    //    input: `twone`,
-    //    expected: 21,
-    //  },
+      //  {
+      //    input: `sadfklj;2jklsajfk;saj4`,
+      //    expected: 24,
+      //  },
+      //  {
+      //    input: `twone`,
+      //    expected: 21,
+      //  },
     ],
     solution: part2,
   },
