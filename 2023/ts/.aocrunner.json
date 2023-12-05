@@ -8,13 +8,13 @@
         "solved": true,
         "result": "55029",
         "attempts": [],
-        "time": 2.0108
+        "time": 1.8554
       },
       "part2": {
         "solved": true,
         "result": "55686",
         "attempts": [],
-        "time": 28.6645
+        "time": 9.4719
       }
     },
     {
@@ -47,16 +47,16 @@
     },
     {
       "part1": {
-        "solved": false,
-        "result": null,
-        "attempts": [],
-        "time": null
+        "solved": true,
+        "result": "28750",
+        "attempts": ["273012", "5500", "1010"],
+        "time": 5.0005
       },
       "part2": {
-        "solved": false,
-        "result": null,
+        "solved": true,
+        "result": "10212704",
         "attempts": [],
-        "time": null
+        "time": 11012.0846
       }
     },
     {
