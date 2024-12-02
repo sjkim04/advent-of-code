@@ -1,5 +1,4 @@
 import run from "aocrunner";
-import { error } from "console";
 
 const parseInput = (rawInput: string) => {
   return rawInput.split("\n").map((a) => a.split(" ").map((n) => +n));
